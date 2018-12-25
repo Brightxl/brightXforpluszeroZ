@@ -1,0 +1,11 @@
+<view class="listWrap">
+  <view class="listitem01">
+    <view class="wx-view_pOFBSt" />
+  </view>
+</view>
+<view class="listitemWrap">
+  <text class="listitem-left">{{jlly}}</text>
+</view>
+<view class="listitemWrap">
+  <text class="listitem-right">{{lly}}</text>
+</view>

@@ -1,0 +1,50 @@
+<view class="listitemWrap">
+  <i-tab-bar current="{{ current }}" bindchange="handleChange">
+    <i-tab-bar-item key="huge" icon="like" current-icon="like_fill" title="huge"></i-tab-bar-item>
+    <i-tab-bar-item key="video" icon="video" current-icon="video_fill" title="胡猫猫"></i-tab-bar-item>
+    <i-tab-bar-item key="music" icon="systemprompt" current-icon="systemprompt_fill" title="每日一歌"></i-tab-bar-item>
+    <i-tab-bar-item key="flashlight" icon="flashlight" current-icon="flashlight_fill" title="天气"></i-tab-bar-item>
+    <i-tab-bar-item key="message" icon="message" current-icon="message_fill" title="日历"></i-tab-bar-item>
+  </i-tab-bar>
+  <view class="image_thumbView" bindtap="createTimeStamp" hidden="{{love}}">
+    <navigator class="image_thumbView" hover-class="navigator-hover">
+      <image class="image_thumb" mode="aspectFit" src="{{img_url}}" />
+    </navigator>
+  </view>
+  <view hidden='{{love}}'>
+    <text class="text_description">{{tc_sxy}}</text>
+  </view>
+  <view hidden='{{play}}'>
+    <txv-video vid="t0645ro9kli" playerid="txv1" :autoplay="true"></txv-video>
+  </view>
+  <view class="operation-container" hidden='{{music}}'>
+    <view class="image_thumbView" hover-class="navigator-hover">
+      <image class='audio_post{{music_on?" music_on":""}}' style="{{music_playing?'paused':'running'}}" src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545654116200&di=aa3bcaee1ccd22065d6c4f5b92aad310&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F816a125f806831130032f38567424ff9c2451f9610717-fd1n6a_fw658'></image>
+    </view>
+    <view class='audio_progress'>
+      <slider block-size='14' bindchange='audioChange' bindchanging='audioChanging' value='{{sliderValue}}'></slider>
+      <view>{{musicTime}}</view>
+    </view>
+    <image src="../../utils/img/prev.png" class="icon-prev" bindtap="bindTapPrev"></image>
+    <image src="{{music_playing === true ? '../../utils/img/pause.png' : '../../utils/img/play.png'}}" class="icon-play" bindtap="bindTapPlay">
+    </image>
+    <image src="../../utils/img/next.png" class="icon-next" bindtap="bindTapNext"></image>
+  </view>
+  <!--<view>
+    <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="getVideo" hover-class="other-button-hover"> 换一个鸭🤗 </button>
+  </view>-->
+  <view class="navigator" hidden='{{weather}}'>
+    <view class="image_thumbView" hover-class="navigator-hover">
+      <image class="image_thumb_new" src="{{weatherPic}}" />
+      <text class="listitem-left">{{weatherData}}</text>
+    </view>
+  </view>
+  <view class="demo6" hidden='{{message}}'>
+    <calendar weeks-type="full-en" cell-size="30" next="{{false}}" prev="{{false}}" show-more-days="{{true}}" calendar-style="demo6-calendar" header-style="demo6-header" board-style="demo6-board" days-color="{{demo6_days_style}}" binddayClick="dayClick" />
+  </view>
+  <view class="section" hidden='{{message}}'>
+    <textarea placeholder="请输入对胡猫猫的留言~" value="{{liuyan}}" bindinput="voteTitle" />
+    <!--<input placeholder="请输入对胡猫猫的留言~" bindinput="voteTitle"/>-->
+    <i-button type="primary" bind:click="okayApiHelloWorld"> 发射留言🤗 </i-button>
+  </view>
+</view>
