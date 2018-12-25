@@ -1,0 +1,6 @@
+<!--logs.wxml-->
+<view style="background-color:	#87CEEB">
+  <video style='width:100%' src="https://vd3.bdstatic.com/mda-imjn3ukvhqh54gr7/sc/mda-imjn3ukvhqh54gr7.mp4?auth_key=1545643170-0-0-e509203f2e7061555feb32d0fc93a7cc&bcevod_channel=searchbox_feed&pd=bjh&abtest=all"></video>
+  <video style='width:100%' src="http://gslb.miaopai.com/stream/QJmvAAcjOUIlDQ0cP1rfgGu8gtP5KkoF.mp4?vend=miaopai&ssig=3947d7dec99e28bc72160a0c5ea280f1&time_stamp=1545646705727&mpflag=32"></video>
+  <video style='width:100%' src="https://vd3.bdstatic.com/mda-iidqyj3gjxwwvc3d/sc/mda-iidqyj3gjxwwvc3d.mp4?auth_key=1545644967-0-0-d2e615ee6d80df09c4dbb59f57b72484&bcevod_channel=searchbox_feed&pd=bjh&abtest=all"></video>
+</view>

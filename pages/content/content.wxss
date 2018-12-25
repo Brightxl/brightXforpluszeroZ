@@ -1,0 +1,228 @@
+/* 基础样式 */
+
+view, scroll-view, swiper, swiper-item, icon, text, progress, button,
+checkbox-group, checkbox, form, input, label, picker, radio-group, radio, slider,
+switch, action-sheet, action-sheet-item, action-sheet-cancel, modal, toast,
+loading, navigator, audio, image, video, map, canvas {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+page {
+  background-color: #87CEEB;
+  height: 100%;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+checkbox-group, radio-group {
+  display: block;
+}
+
+/* 自定义样式 */
+
+.listitemWrap {
+  padding: 15px 56.25rpx;
+}
+
+.image_thumbView {
+  width: 637.5rpx;
+  height: 637.5rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.image_thumb {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.text_description {
+  display: block;
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  line-height: 1.7em;
+  margin-bottom: 10px;
+}
+
+.listitemInfoWrap {
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-color: rgb(237, 237, 237);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.likeinfo {
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.likebtn {
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+}
+
+.likeinfo_count {
+  font-size: 12px;
+  color: rgb(148, 148, 148);
+  padding: 3px 10px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 4px;
+}
+
+.listitem_creattime {
+  font-size: 12px;
+  color: rgb(186, 186, 186);
+  padding-right: 2px;
+}
+
+.wx-text_hDebWU {
+  margin-bottom: 15px;
+  text-align: center;
+  padding-bottom: 8px;
+  display: block;
+  border-bottom: 1px solid rgb(237, 237, 237);
+  margin-top: 15px;
+}
+
+.listitem01 {
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 37.5rpx;
+}
+
+.listitem-navigator2 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 37.5rpx;
+}
+
+.wx-image_tBcdCT2 {
+  width: 80px;
+  height: 80px;
+}
+
+.wx-view_cPj0ok2 {
+  margin-left: 10px;
+  flex: 1 1 0%;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wx-text_TvHPc92 {
+  font-size: 16px;
+  -webkit-line-clamp: 2;
+}
+
+.wx-text_LS2Jup2 {
+  font-size: 13px;
+  color: #a1a1a1;
+}
+
+.wx-view_adF7Mw {
+  display: flex;
+  justify-content: space-between;
+  padding: 18.75rpx;
+  padding-right: 18.75rpx;
+}
+
+.wx-view_2gazUr {
+  display: flex;
+  padding-left: 18.75rpx;
+}
+
+.wx-view_DKe6UT {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 40px;
+  margin-right: 15px;
+}
+
+.wx-image_6E2A1o {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.wx-text_id0VJj {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+.wx-text_9Wn0Di {
+  font-size: 12px;
+  color: rgb(156, 156, 156);
+  padding-right: 18.75rpx;
+}
+
+.listitem-navigator {
+  display: block;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-align: right;
+  line-height: 1.7em;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+.listitem-left {
+  display: block;
+  font-size: 13px;
+  color: rgb(255, 105, 180);
+  text-align: justify;
+  line-height: 1.7em;
+  margin-bottom: 10px;
+}
+
+.listitem-right {
+  display: block;
+  font-size: 13px;
+  color: rgb(255, 215, 0);
+  text-align: justify;
+  line-height: 1.7em;
+  margin-bottom: 10px;
+}
+
+.demo6 {
+    padding: 15px;
+}
+
+.demo6-calendar {
+    background-color: #fff043;
+    padding-top: 10px;    
+    box-shadow: 5px 5px 2px 1px rgba(255, 240, 67, 0.5);
+}
+
+.demo6-header {
+    font-size: large;
+    color: black;    
+}
+
+.demo6-board {
+    color: #ff8a43;
+    font-weight: bold;
+}
+
+.map_container{ 
+    height: 300px; 
+    width: 100%; 
+} 
+
+.map { 
+    height: 100%; 
+    width: 100%; 
+} 
